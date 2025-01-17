@@ -39,11 +39,13 @@ $('.upButton').on('click', backToTop);
 function trackScroll() {
     let scrolled = window.pageYOffset;
 
-    if (scrolled > 100) {
+    if (scrolled > 50) {
         $('.upButton').addClass('show');
+        $('.header').addClass('scrolled');
     }
-    if (scrolled < 100) {
+    if (scrolled < 50) {
         $('.upButton').removeClass('show');
+        $('.header').removeClass('scrolled');
     }
 }
 
@@ -233,3 +235,9 @@ $(document).ready(function () {
 });
 
 // аккордеон (конец)
+
+const swiper1 = new Swiper('.swiper1', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop: true,
+});
