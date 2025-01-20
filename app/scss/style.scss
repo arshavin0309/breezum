@@ -64,11 +64,9 @@ section {
             .wide-container {
                 position: relative;
                 padding-top: calc(118px + 115px);
-                background: image-set(
-                    url(../images/hero-image.avif),
-                    url(../images/hero-image.webp),
-                    url(../images/hero-image.png)
-                ) center / cover no-repeat;
+                background: image-set(url(../images/hero-image.avif),
+                        url(../images/hero-image.webp),
+                        url(../images/hero-image.png)) center / cover no-repeat;
 
                 &::before {
                     content: '';
@@ -130,6 +128,8 @@ h1 {
     }
 
     &.green-bg {
+        color: var(--white);
+
         &::before {
             content: '';
             display: block;
@@ -260,6 +260,10 @@ h3 {
     padding: 100px 10px 10px;
     background: var(--green-bg);
     border-radius: 20px;
+
+    h2 {
+        color: var(--white);
+    }
 }
 
 .container {
