@@ -241,3 +241,9 @@ const swiper1 = new Swiper('.swiper1', {
     spaceBetween: 10,
     loop: true,
 });
+
+const swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop: true,
+});
