@@ -222,7 +222,7 @@ h3 {
     transition: all .2s ease-in-out;
     transform: scale(0);
     pointer-events: none;
-    background: var(--green-medium) url(../images/up-btn.svg) center / 20px no-repeat;
+    background: var(--green-medium) url(../images/up-btn-white.svg) center / 20px no-repeat;
     border-radius: 50%;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
 
@@ -512,11 +512,19 @@ h3 {
         }
 
         &:nth-child(1) {
-            background: image-set(
-                url(../images/main-steps-1.avif),
-                url(../images/main-steps-1.webp),
-                url(../images/main-steps-1.png)
-            ) var(--grey-bg) right bottom / 256px 164px no-repeat;
+            position: relative;
+            background: image-set(url(../images/main-steps-1.avif), url(../images/main-steps-1.webp), url(../images/main-steps-1.png)) var(--grey-bg) right -15px bottom -5px / 280px 185px no-repeat;
+
+            &::before {
+                z-index: 1;
+                position: absolute;
+                content: '';
+                top: 23px;
+                left: 73px;
+                width: calc(100% - 50px);
+                height: 30px;
+                background: url(../images/arrow-steps.svg) center / contain no-repeat;
+            }
 
             .main-steps__number {
                 background: url(../images/1.svg) var(--red) center / 4px 12px no-repeat;
@@ -524,12 +532,28 @@ h3 {
         }
 
         &:nth-child(2) {
+            position: relative;
+            background: image-set(url(../images/main-steps-2.avif), url(../images/main-steps-2.webp), url(../images/main-steps-2.png)) var(--grey-bg) right 20px bottom 15px / 160px 180px no-repeat;
+
+            &::before {
+                z-index: 1;
+                position: absolute;
+                content: '';
+                top: 23px;
+                left: 73px;
+                width: calc(100% - 50px);
+                height: 30px;
+                background: url(../images/arrow-steps.svg) center / contain no-repeat;
+            }
+
             .main-steps__number {
                 background: url(../images/2.svg) var(--red) center / 9px 12px no-repeat;
             }
         }
 
         &:nth-child(3) {
+            background: image-set(url(../images/main-steps-3.avif), url(../images/main-steps-3.webp), url(../images/main-steps-3.png)) var(--grey-bg) right -15px bottom -5px / 230px 200px no-repeat;
+
             .main-steps__number {
                 background: url(../images/3.svg) var(--red) center / 9px 12px no-repeat;
             }
@@ -545,6 +569,58 @@ h3 {
         height: 30px;
         margin-bottom: 30px;
         border-radius: 10px;
+    }
+}
+
+.main-analitycs {
+    h2 {
+        max-width: 1040px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 345px 1fr;
+        gap: 20px;
+        padding: 20px;
+        background: var(--grey-bg);
+        border-radius: 20px;
+    }
+}
+
+.mch-widget-auu.mch-widget.mch-widget-calendar.simple {
+    max-width: 100% !important;
+}
+
+.footer {
+    .wide-container {
+        padding: 120px 10px 90px;
+        margin-bottom: 10px;
+        color: var(--white);
+    }
+
+    &__banner {
+        color: var(--white);
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 35px;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 322px;
+        height: 77px;
+        background: url(../images/footer-logo.svg) center / contain no-repeat;
+    }
+
+    &__copyright {
+        margin-top: 65px;
+        text-align: center;
     }
 }
 
