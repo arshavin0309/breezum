@@ -13,6 +13,7 @@
     --red: #CD394B;
     --bg: #FDFBF9;
     --transition: .2s ease-in-out all;
+    --hover: #21B0D9;
 }
 
 * {
@@ -205,19 +206,71 @@ h3 {
     }
 
     &--white {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         padding: 0;
-        background: var(--white) url(../images/arrow.svg) center / 12px no-repeat;
         border-radius: 10px;
+        background: var(--white);
+        color: var(--green-medium);
+        transition: var(--transition);
+
+        span {
+            width: 0;
+            position: absolute;
+            left: 0;
+            margin-right: 10px;
+            font-size: 0;
+            line-height: 0;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url(../images/arrow.svg) center / contain no-repeat;
+        }
     }
 
     &--green {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 30px;
         height: 30px;
         padding: 0;
-        background: var(--green-dark) url(../images/arrow-white.svg) center / 12px no-repeat;
         border-radius: 10px;
+        background: var(--green-dark);
+        color: var(--green-medium);
+        transition: var(--transition);
+        width: 30px;
+        
+        span {
+            width: 0;
+            position: absolute;
+            left: 0;
+            margin-right: 10px;
+            font-size: 0;
+            line-height: 0;
+            opacity: 0;
+            transition: var(--transition);
+            color: var(--white);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url(../images/arrow-white.svg) center / contain no-repeat;
+        }
     }
 }
 
@@ -425,6 +478,7 @@ h3 {
         text-decoration: none;
         font-size: 18px;
         line-height: 24px;
+        transition: var(--transition);
 
         &::after {
             content: '';
@@ -432,6 +486,7 @@ h3 {
             width: 24px;
             height: 24px;
             background: url(../images/header-btn.svg) center / contain no-repeat;
+            transition: var(--transition);
         }
     }
 }
@@ -555,6 +610,7 @@ h3 {
         font-size: 18px;
         line-height: 130%;
         font-weight: 500;
+        transition: var(--transition);
     }
 }
 
@@ -587,10 +643,11 @@ h3 {
                 position: absolute;
                 content: '';
                 top: 23px;
-                left: 73px;
+                left: 83px;
                 width: calc(100% - 50px);
                 height: 30px;
                 background: url(../images/arrow-steps.svg) center / contain no-repeat;
+                animation: left-right 2s ease-in-out infinite;
             }
 
             .main-steps__number {
@@ -607,10 +664,11 @@ h3 {
                 position: absolute;
                 content: '';
                 top: 23px;
-                left: 73px;
+                left: 83px;
                 width: calc(100% - 50px);
                 height: 30px;
                 background: url(../images/arrow-steps.svg) center / contain no-repeat;
+                animation: left-right 2s ease-in-out infinite;
             }
 
             .main-steps__number {
