@@ -66,9 +66,7 @@ section {
             .wide-container {
                 position: relative;
                 padding-top: calc(118px + 115px);
-                background: image-set(url(../images/hero-image.avif),
-                        url(../images/hero-image.webp),
-                        url(../images/hero-image.png)) center / cover no-repeat;
+                background: image-set(url(../images/hero-image.avif), url(../images/hero-image.webp), url(../images/hero-image.png)) center / cover no-repeat;
 
                 &::before {
                     content: '';
@@ -197,6 +195,11 @@ h3 {
         background: var(--green-dark);
     }
 
+    &--white {
+        color: var(--green-medium);
+        background: var(--white);
+    }
+
     &--medium {
         background: var(--green-medium);
     }
@@ -207,7 +210,7 @@ h3 {
         transform: translateX(-50%);
     }
 
-    &--white {
+    &--white-box {
         position: relative;
         display: flex;
         align-items: center;
@@ -253,7 +256,7 @@ h3 {
         color: var(--green-medium);
         transition: var(--transition);
         width: 30px;
-        
+
         span {
             width: 0;
             position: absolute;
@@ -845,6 +848,133 @@ h3 {
 
         &:nth-child(7) {
             background: url(../images/paypal.svg) center / auto 30px no-repeat;
+        }
+    }
+}
+
+.crumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--grey-bg);
+
+    a {
+        color: var(--grey-bg);
+        text-decoration: none;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &:not(:last-child) {
+            &::after {
+                content: '';
+                display: block;
+                ;
+                width: 16px;
+                height: 16px;
+                background: url(../images/title-green-bg.svg) center / contain no-repeat;
+            }
+        }
+    }
+}
+
+.terms-main {
+    .wide-container {
+        padding-top: 210px;
+        padding-bottom: 150px;
+    }
+
+    p {
+        text-align: center;
+        color: var(--white);
+    }
+}
+
+.swiper3-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.swiper3 {
+    .swiper-slide {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 35px;
+        padding: 50px calc(25px + 56px) 50px 25px;
+        border-radius: 20px;
+        background: var(--grey-bg) url(../images/terms-explore-bg.svg) right 25px top 50px / 56px no-repeat;
+
+        &.popular {
+            padding: 50px calc(25px + 58px) 50px 25px;
+            background: var(--grey-bg) url(../images/terms-explore-bg--popular.svg) right 25px top 50px / 58px 74px no-repeat;
+        }
+    }
+
+    .swiper-wrapper {}
+}
+
+.swiper3-button-prev {
+    width: 40px;
+    height: 40px;
+    background: var(--red) url(../images/prev.svg) center / 16px 14px no-repeat;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+        cursor: initial;
+        opacity: 0.5;
+    }
+}
+
+.swiper3-button-next {
+    width: 40px;
+    height: 40px;
+    background: var(--red) url(../images/next.svg) center / 16px 14px no-repeat;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+        cursor: initial;
+        opacity: 0.5;
+    }
+}
+
+.swiper3-button-next {}
+
+.terms-explore {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+
+        li {
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background: var(--green-dark);
+                border-radius: 50%;
+            }
         }
     }
 }

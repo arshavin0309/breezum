@@ -247,3 +247,13 @@ const swiper2 = new Swiper('.swiper2', {
     spaceBetween: 10,
     loop: true,
 });
+
+const swiper3 = new Swiper('.swiper3', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    navigation: {
+        nextEl: '.swiper3-button-next',
+        prevEl: '.swiper3-button-prev',
+    },
+});
