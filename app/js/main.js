@@ -259,11 +259,6 @@ const swiper3 = new Swiper('.swiper3', {
 });
 
 switch (document.location.pathname) {
-    case '/':
-        $('.footer__title').html('Your success, our commitment')
-        $('.footer__info').html('Start your journey with Breezum');
-        break;
-
     case '/terms.html':
         $('.footer__title').html('Take your trading to the next level with Breezum!');
         $('.footer__info').html('Open your account and unlock exclusive features');
