@@ -87,6 +87,9 @@ section {
 
         &.main-hero {
             .wide-container {
+                padding-left: 10px;
+                padding-right: 10px;
+
                 &::before {
                     background: var(--green-bg-opacity);
                     background-size: 200% 200%;
@@ -1164,7 +1167,7 @@ h3 {
         padding-bottom: 120px;
         display: grid;
         gap: 20px;
-        grid-template-columns: 880px 620px;
+        grid-template-columns: 1fr 620px;
     }
 
     &__item {
@@ -1231,6 +1234,25 @@ h3 {
             display: block;
             margin: 30px auto -5px;
         }
+    }
+}
+
+.platform-why {
+    &__list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+    }
+
+    &__item {
+        min-height: 265px;
+        padding: 30px;
+        background: var(--grey-bg);
+        border-radius: 20px;
+    }
+
+    img {
+        margin-bottom: 10px;
     }
 }
 

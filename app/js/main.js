@@ -269,8 +269,13 @@ switch (document.location.pathname) {
         $('.footer__info').html('Open your account and unlock exclusive features');
         break;
 
+    case '/platform.html':
+        $('.footer__title').html('Empower your trading');
+        $('.footer__info').html('Join a community of traders who rely on Breezum’s to achieve their goals');
+        break;
+
     default:
         $('.footer__title').html('Your success, our commitment')
-        $('.footer__info').html('Get started');
+        $('.footer__info').html('Start your journey with Breezum');
         break;
 }
