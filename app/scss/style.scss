@@ -1711,6 +1711,7 @@ h3 {
         line-height: 130%;
         font-weight: 500;
         font-family: 'Raleway', sans-serif;
+        font-variant-numeric: lining-nums;
 
         a {
             display: flex;
@@ -1724,6 +1725,7 @@ h3 {
             line-height: 130%;
             font-weight: 500;
             font-family: 'Raleway', sans-serif;
+            font-variant-numeric: lining-nums;
         }
 
         &.active {
