@@ -370,6 +370,10 @@ const swiper3 = new Swiper('.swiper3', {
         nextEl: '.swiper3-button-next',
         prevEl: '.swiper3-button-prev',
     },
+
+    pagination: {
+        el: '.swiper3-pagination',
+    },
 });
 
 switch (document.location.pathname) {
