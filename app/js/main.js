@@ -225,10 +225,10 @@ document.querySelector('.cookies .btn').addEventListener('click', () => {
 let menuItem = $('.header .menu > .menu-item');
 let subMenu = $('.header .menu > .menu-item .sub-menu');
 let burger = $('.header__burger'); // кнопка открытия мобильного меню
-let headerMenu = $('.header .menu'); // меню хедера
-let headerBox = $('.header__box'); // блок внутри контейнера хедера, например если он в виде острова и при выпадении мобильного меню, нужно его дополнительно стилизовать
+let headerMenu = $('.header__nav'); // меню хедера
+let headerBox = $('.header'); // блок внутри контейнера хедера, например если он в виде острова и при выпадении мобильного меню, нужно его дополнительно стилизовать
 
-if ($(window).width() <= 1024) {
+if ($(window).width() <= 1200) {
 
     burger.on('click', function () {
         burger.toggleClass('active');
@@ -311,25 +311,6 @@ tableShow.on('click', showTr);
 tableHide.on('click', hideTr);
 
 // табы для таблиц (конец)
-
-// плавная прокрутка до якоря (начало)
-
-const anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-
-        const blockID = anchor.getAttribute('href').substr(1)
-
-        document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    })
-}
-
-// плавная прокрутка до якоря (конец)
 
 // аккордеон (начало)
 

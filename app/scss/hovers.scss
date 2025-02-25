@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .header {
         .menu {
             &>.menu-item {
@@ -24,6 +24,8 @@
             }
 
             .sub-menu {
+                transition: var(--transition);
+
                 .menu-item {
                     a {
                         &:hover {
@@ -131,6 +133,14 @@
 
     .contacts-contacts {
         &__link {
+            &:hover {
+                color: var(--hover);
+            }
+        }
+    }
+
+    .cookies {
+        a {
             &:hover {
                 color: var(--hover);
             }
