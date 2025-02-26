@@ -1,0 +1,17 @@
+@media (max-width: 1500px) {
+    .main-steps {
+        &__item {
+            &:nth-child(1) {
+                background: image-set(url(../images/main-steps-1.avif), url(../images/main-steps-1.webp), url(../images/main-steps-1.png)) var(--grey-bg) right -15px bottom -5px / 200px no-repeat;
+            }
+
+            &:nth-child(2) {
+                background: image-set(url(../images/main-steps-2.avif), url(../images/main-steps-2.webp), url(../images/main-steps-2.png)) var(--grey-bg) right 20px bottom 15px / 100px no-repeat;
+            }
+
+            &:nth-child(3) {
+                background: image-set(url(../images/main-steps-3.avif), url(../images/main-steps-3.webp), url(../images/main-steps-3.png)) var(--grey-bg) right -15px bottom -5px / 150px no-repeat;
+            }
+        }
+    }
+}

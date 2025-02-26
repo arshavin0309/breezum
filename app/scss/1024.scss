@@ -49,4 +49,53 @@
             grid-row: 7;
         }
     }
+
+    .main-steps {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            position: relative;
+            min-height: 190px;
+            padding: 25px 270px 25px 90px;
+            gap: 35px;
+
+            &:nth-child(1) {
+                background: image-set(url(../images/main-steps-1.avif), url(../images/main-steps-1.webp), url(../images/main-steps-1.png)) var(--grey-bg) right -15px bottom -5px / 256px 163px no-repeat;
+
+                &::before {
+                    width: 10px;
+                    height: calc(100% - 55px);
+                    top: 65px;
+                    left: 35px;
+                    background: url(../images/arrow-steps-bottom.svg) bottom center / cover no-repeat;
+                    animation: top-bottom 2s ease-in-out infinite;
+                }
+            }
+
+            &:nth-child(2) {
+                background: image-set(url(../images/main-steps-2.avif), url(../images/main-steps-2.webp), url(../images/main-steps-2.png)) var(--grey-bg) right 20px center / 151px 165px no-repeat;
+
+                &::before {
+                    width: 10px;
+                    height: calc(100% - 55px);
+                    top: 65px;
+                    left: 35px;
+                    background: url(../images/arrow-steps-bottom.svg) bottom center / cover no-repeat;
+                    animation: top-bottom 2s ease-in-out infinite;
+                }
+            }
+
+            &:nth-child(3) {
+                background: image-set(url(../images/main-steps-3.avif), url(../images/main-steps-3.webp), url(../images/main-steps-3.png)) var(--grey-bg) right -15px bottom -5px / 206px 179px no-repeat;
+            }
+        }
+
+        &__number {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+    }
 }

@@ -780,11 +780,11 @@ h3 {
                 z-index: 1;
                 position: absolute;
                 content: '';
-                top: 23px;
+                top: 33px;
                 left: 83px;
                 width: calc(100% - 50px);
-                height: 30px;
-                background: url(../images/arrow-steps.svg) center / contain no-repeat;
+                height: 10px;
+                background: url(../images/arrow-steps.svg) center right / cover no-repeat;
                 animation: left-right 2s ease-in-out infinite;
             }
 
@@ -801,11 +801,11 @@ h3 {
                 z-index: 1;
                 position: absolute;
                 content: '';
-                top: 23px;
+                top: 33px;
                 left: 83px;
                 width: calc(100% - 50px);
-                height: 30px;
-                background: url(../images/arrow-steps.svg) center / contain no-repeat;
+                height: 10px;
+                background: url(../images/arrow-steps.svg) center right / cover no-repeat;
                 animation: left-right 2s ease-in-out infinite;
             }
 
@@ -2155,6 +2155,8 @@ h3 {
 
 @import '../scss/hovers';
 @import '../scss/1800';
+@import '../scss/1600';
+@import '../scss/1500';
 @import '../scss/1400';
 @import '../scss/1300';
 @import '../scss/1200';
