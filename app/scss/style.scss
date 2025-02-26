@@ -671,6 +671,10 @@ h3 {
 .swiper1 {
     margin-top: 110px;
 
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
     p {
         text-align: left !important;
     }
@@ -942,6 +946,10 @@ h3 {
 
 .swiper2 {
     margin: 60px auto 120px;
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
 
     .swiper-slide {
         width: 260px;

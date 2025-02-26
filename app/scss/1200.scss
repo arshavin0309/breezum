@@ -108,9 +108,11 @@
             background: var(--green-medium);
             transition: var(--transition);
             transform: translateX(-100vw);
+            opacity: 0;
 
             &.active {
                 transform: none;
+                opacity: 1;
             }
         }
     }
@@ -145,9 +147,32 @@
     }
 
     .main {
+        section {
+            &.main-hero {
+                .wide-container {
+                    padding-top: 140px;
+                }
+            }
+        }
+
         h1 {
+            max-width: 520px;
+            margin-bottom: 25px;
             font-size: 42px;
             line-height: 46px;
+        }
+    }
+
+    .swiper1 {
+        margin-top: 30px;
+
+        .box {
+            gap: 10px;
+        }
+
+        .swiper-slide {
+            padding: 15px 30px 15px 15px;
+            gap: 25px;
         }
     }
 

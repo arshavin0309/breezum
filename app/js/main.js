@@ -3,8 +3,6 @@
 // !!! ДЛЯ CMS НЕ ПОНАДОБИТЬСЯ (начало)
 
 let lang = document.documentElement.lang;
-console.log(lang);
-
 let title;
 
 if (!document.title) {
@@ -335,12 +333,22 @@ const swiper1 = new Swiper('.swiper1', {
     slidesPerView: 'auto',
     spaceBetween: 10,
     loop: true,
+    speed: 8000,
+    autoplay: {
+        delay: 0,
+    },
+    allowTouchMove: false,
 });
 
 const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 'auto',
     spaceBetween: 10,
     loop: true,
+    speed: 8000,
+    autoplay: {
+        delay: 0,
+    },
+    allowTouchMove: false,
 });
 
 const swiper3 = new Swiper('.swiper3', {
