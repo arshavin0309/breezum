@@ -107,8 +107,8 @@
             gap: 20px;
             background: var(--green-medium);
             transition: var(--transition);
-            transform: translateX(-100vw);
-            opacity: 0;
+            transform: translateX(-100%);
+            //opacity: 0;
 
             &.active {
                 transform: none;
@@ -189,6 +189,7 @@
             &.main-hero {
                 .wide-container {
                     padding-top: 140px;
+                    padding-bottom: 10px;
                 }
             }
         }
@@ -234,6 +235,26 @@
         .wide-container {
             padding-top: 100px;
             padding-bottom: 100px;
+        }
+    }
+
+    .swiper3 {
+        &-box {
+            gap: 25px;
+        }
+
+        .swiper-slide {
+            padding: 30px 80px 30px 15px;
+            background-position: right 15px top 30px;
+
+            &.popular {
+                padding: 30px 80px 30px 15px;
+                background-position: right 15px top 30px;
+            }
+        }
+
+        &-pagination {
+            margin-top: 20px;
         }
     }
 }

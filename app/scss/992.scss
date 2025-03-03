@@ -13,4 +13,10 @@
             grid-row: 4;
         }
     }
+
+    .assistance {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
 }

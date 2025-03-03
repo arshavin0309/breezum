@@ -169,4 +169,29 @@
             background: url(../images/footer-banner.svg) center top / contain no-repeat;
         }
     }
+
+    .swiper3 {
+        &-box {
+            position: relative;
+            padding-top: 60px;
+        }
+
+        &-button-prev {
+            position: absolute;
+            top: 0;
+            right: 35px;
+            width: 12px;
+            height: 9px;
+            background: url(../images/arrow-left.svg) center / contain no-repeat;
+        }
+
+        &-button-next {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 12px;
+            height: 9px;
+            background: url(../images/arrow-right.svg) center / contain no-repeat;
+        }
+    }
 }
