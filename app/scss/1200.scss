@@ -126,24 +126,62 @@
         padding-right: 30px;
     }
 
+    .swiper2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
     .footer {
+        .wide-container {
+            padding-top: 90px;
+            padding-bottom: 95px;
+        }
+
         &__logo {
             grid-column: initial;
         }
 
+        &__banner {
+            padding-top: 7px;
+            padding-bottom: 0;
+
+            p {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__copyright {
+            margin-top: 25px;
+        }
+
         &__box {
+            max-width: 705px;
+            margin: auto;
             grid-template-columns: 1fr;
         }
 
         .menu {
             display: flex;
-            justify-content: space-between;
+            gap: 160px;
+            justify-content: center;
         }
     }
 
     section {
         margin-top: 100px;
         margin-bottom: 100px;
+
+        &:first-child {
+            .wide-container {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .container {
+                padding-top: 140px;
+                padding-bottom: 60px;
+            }
+        }
     }
 
     .main {

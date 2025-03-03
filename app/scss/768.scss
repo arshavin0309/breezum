@@ -25,4 +25,17 @@
             padding: 15px 50px;
         }
     }
+
+    .main-analitycs {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .footer {
+        .menu {
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
 }

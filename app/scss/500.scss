@@ -16,5 +16,38 @@
 
     .btn {
         width: 100%;
+
+        &--green {
+            width: 30px;
+        }
+
+        &--white-box {
+            width: 30px;
+        }
+    }
+
+    .main-steps {
+        &__item {
+            min-height: initial;
+            gap: 20px;
+
+            &:nth-child(1) {
+                background: image-set(url(../images/main-steps-1.avif), url(../images/main-steps-1.webp), url(../images/main-steps-1.png)) var(--grey-bg) right -15px bottom -5px / 130px 83px no-repeat;
+            }
+
+            &:nth-child(2) {
+                background: image-set(url(../images/main-steps-2.avif), url(../images/main-steps-2.webp), url(../images/main-steps-2.png)) var(--grey-bg) right 15px bottom 15px / 80px 92px no-repeat;
+            }
+
+            &:nth-child(3) {
+                background: image-set(url(../images/main-steps-3.avif), url(../images/main-steps-3.webp), url(../images/main-steps-3.png)) var(--grey-bg) right -10px bottom -5px / 130px 114px no-repeat;
+            }
+        }
+    }
+
+    .footer {
+        .menu {
+            flex-direction: column;
+        }
     }
 }
