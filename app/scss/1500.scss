@@ -30,4 +30,10 @@
             }
         }
     }
+
+    .platform-app {
+        .container {
+            grid-template-columns: 1fr 500px;
+        }
+    }
 }

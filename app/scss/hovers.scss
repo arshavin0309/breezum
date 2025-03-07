@@ -24,8 +24,6 @@
             }
 
             .sub-menu {
-                transition: var(--transition);
-
                 .menu-item {
                     a {
                         &:hover {
@@ -143,6 +141,16 @@
         a {
             &:hover {
                 color: var(--hover);
+            }
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .header {
+        .menu {
+            .sub-menu {
+                transition: var(--transition);
             }
         }
     }

@@ -50,4 +50,10 @@
             flex-direction: column;
         }
     }
+
+    .main-hero {
+        .btn {
+            max-width: calc(100% - 30px);
+        }
+    }
 }

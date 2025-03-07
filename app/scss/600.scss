@@ -147,6 +147,8 @@
 
     .swiper1 {
         margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .swiper2 {
@@ -192,6 +194,114 @@
             width: 12px;
             height: 9px;
             background: url(../images/arrow-right.svg) center / contain no-repeat;
+        }
+    }
+
+    .terms-advantages {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &__item {
+            min-height: 120px;
+        }
+    }
+
+    .platform-app {
+        .container {
+            padding: 80px 15px;
+        }
+
+        &__btns {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            &--mt {
+                .platform-app__btns {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+
+        picture {
+            width: 100%;
+
+            img {
+                height: 200px;
+                margin: auto;
+            }
+        }
+    }
+
+    .instrument-currency {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+    }
+
+    .instrument-cryptocurrency {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        &__item {
+            &:nth-child(1) {
+                padding: 20px 10px;
+            }
+        }
+    }
+
+    .instrument-stocks {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        &__item {
+            &:nth-child(1) {
+                padding: 20px 10px;
+            }
+
+            &:nth-child(3) {
+                padding: 20px 10px;
+            }
+        }
+    }
+
+    .instrument-indices {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        &__item {
+            &:nth-child(1) {
+                padding: 20px 10px;
+            }
+        }
+    }
+
+    .tips-using {
+        &__item {
+            min-height: 200px;
+        }
+    }
+
+    .tips-hours {
+        .wide-container {
+            padding-bottom: 80px;
+        }
+    }
+
+    .tips-read {
+        picture {
+            img {
+                height: 230px;
+            }
         }
     }
 }

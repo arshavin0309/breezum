@@ -4,9 +4,7 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        &__item {
-            
-        }
+        &__item {}
 
         &__banner {
             grid-column: 1/3;
@@ -17,6 +15,30 @@
     .assistance {
         &__container {
             grid-template-columns: 1fr;
+        }
+    }
+
+    .tips-read {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            min-height: 150px;
+
+            &:nth-child(5) {
+                grid-column: initial;
+            }
+        }
+
+        picture {
+            grid-column: initial;
+            grid-row: initial;
+
+            img {
+                height: 320px;
+                object-position: top;
+            }
         }
     }
 }

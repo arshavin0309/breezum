@@ -1,3 +1,36 @@
 @media (max-width: 900px) {
-    
+    .platform-tr {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .platform-app {
+        p {
+            max-width: 650px;
+        }
+
+        &__item {
+            &--mt {
+                position: initial;
+
+                p {
+                    max-width: 560px;
+                }
+            }
+        }
+
+        picture {
+            position: initial;
+            padding: 0;
+            margin-top: 30px;
+            display: block;
+            height: auto;
+
+            img {
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
 }
