@@ -5,8 +5,8 @@
         }
 
         &__logo {
-            width: 134px;
-            height: 32px;
+            width: 168px;
+            height: 20px;
         }
 
         &__box {
@@ -32,7 +32,15 @@
 
         &:first-child {
             .container {
-                padding-bottom: 110px;
+                min-height: 410px;
+                padding-bottom: 60px;
+            }
+        }
+
+        &.error-hero {
+            .container {
+                padding-top: 140px;
+                padding-bottom: 180px;
             }
         }
     }
@@ -133,7 +141,7 @@
         &__image {
             min-height: 150px;
             grid-column: initial;
-            grid-row: 3;
+            grid-row: 9;
             background-size: contain;
         }
 
@@ -163,7 +171,8 @@
         }
 
         &__logo {
-            margin: 0;
+            width: 280px 33px;
+            margin: 13px 0;
         }
 
         &__banner {
@@ -172,10 +181,17 @@
         }
     }
 
+    .overview-quotes {
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
     .swiper3 {
         &-box {
             position: relative;
-            padding-top: 60px;
+            padding-top: 30px;
         }
 
         &-button-prev {
@@ -194,6 +210,14 @@
             width: 12px;
             height: 9px;
             background: url(../images/arrow-right.svg) center / contain no-repeat;
+        }
+
+        .swiper-slide {
+            padding: 30px 15px;
+
+            &.popular {
+                padding: 30px 15px;
+            }
         }
     }
 
@@ -303,5 +327,60 @@
                 height: 230px;
             }
         }
+    }
+
+    .about-reviews {
+        .wide-container {
+            &::before {
+                background: url(../images/about-reviews-stars-mobile.svg) center / cover no-repeat;
+            }
+        }
+
+        .container {
+            padding: 80px 15px;
+        }
+
+        picture {
+            img {
+                max-width: 360px;
+            }
+        }
+    }
+
+    .about-mission {
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        &__item {
+            min-height: 100px;
+        }
+    }
+
+    .contacts-contacts {
+
+        input,
+        textarea {
+            max-width: 100%;
+        }
+
+        .btn {
+            width: auto;
+        }
+    }
+
+    .textm {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+    .crumbs {
+        font-size: 17px;
+    }
+
+    .title {
+        font-size: 16px;
     }
 }

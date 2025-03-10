@@ -80,4 +80,25 @@
             }
         }
     }
+
+    .news-news {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contacts-contacts {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+
+        &__map {
+            grid-column: initial;
+        }
+
+        input,
+        textarea {
+            max-width: 445px;
+        }
+    }
 }

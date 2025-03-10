@@ -227,6 +227,8 @@ let headerMenu = $('.header__nav'); // меню хедера
 let headerBox = $('.header'); // блок внутри контейнера хедера, например если он в виде острова и при выпадении мобильного меню, нужно его дополнительно стилизовать
 
 if ($(window).width() <= 1200) {
+    subMenu.slideUp();
+    menuItem.removeClass('active');
 
     burger.on('click', function () {
         burger.toggleClass('active');
@@ -378,7 +380,7 @@ switch (document.location.pathname) {
     case '/about.html':
     case '/contacts.html':
     case '/documents.html':
-        $('.footer__title').html('Take your trading to the next level with Breezum!');
+        $('.footer__title').html('Take your trading to the next level with TigerRiskCapital!');
         $('.footer__info').html('Open your account and unlock exclusive features');
         break;
 
@@ -387,11 +389,11 @@ switch (document.location.pathname) {
     case '/tips.html':
     case '/news.html':
         $('.footer__title').html('Empower your trading');
-        $('.footer__info').html('Join a community of traders who rely on Breezum’s to achieve their goals');
+        $('.footer__info').html('Join a community of traders who rely on TigerRiskCapital’s to achieve their goals');
         break;
 
     default:
         $('.footer__title').html('Your success, our commitment')
-        $('.footer__info').html('Start your journey with Breezum');
+        $('.footer__info').html('Start your journey with TigerRiskCapital');
         break;
 }

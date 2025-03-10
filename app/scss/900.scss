@@ -33,4 +33,16 @@
             }
         }
     }
+
+    .overview-events {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 0;
+            justify-items: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
