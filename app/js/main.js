@@ -397,3 +397,15 @@ switch (document.location.pathname) {
         $('.footer__info').html('Start your journey with TigerRiskCapital');
         break;
 }
+
+switch (lang) {
+    case 'ru':
+        $('.cookies__info').html('Мы используем файлы cookie, чтобы больше узнать о том, как вы пользуетесь нашим сайтом, и что мы можем улучшить.')
+        $('.cookies .btn').html('Принять');
+        break;
+
+    default:
+        $('.cookies__info').html('We use cookies to learn more about how you use our website and what we can improve.')
+        $('.cookies .btn').html('Accept');
+        break;
+}
