@@ -107,6 +107,7 @@
             background: var(--green-medium);
             transition: var(--transition);
             transform: translateX(100%);
+            box-shadow: -2px -1px 8px 0px rgba(34, 60, 80, 0.22);
 
             &.active {
                 transform: none;
