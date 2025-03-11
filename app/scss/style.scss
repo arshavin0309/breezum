@@ -1208,6 +1208,15 @@ h3 {
         font-weight: 400;
     }
 
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        border: 1px solid var(--red);
+        border-radius: 20px;
+    }
+
     h2 {
         text-align: left;
     }
@@ -1217,97 +1226,14 @@ h3 {
     }
 
     picture {
+        display: block;
+        margin-top: 50px;
+
         img {
-            width: 100%;
-            padding: 20px 25px;
-            border: 1px solid var(--red);
-            border-radius: 20px;
-        }
-    }
-}
-
-.platform-app {
-    .wide-container {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .container {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 620px;
-    }
-
-    &__item {
-        padding: 30px;
-        border: 1px solid var(--white);
-        border-radius: 20px;
-
-        &--wt {
-            .platform-app__title {
-                padding-left: 28px;
-                background: url(../images/wt.svg) left center / 18px 16px no-repeat;
-            }
-        }
-
-        &--mt {
-            grid-column: 2/3;
-            grid-row: 1/3;
-
-            .platform-app__title {
-                padding-left: 21px;
-                background: url(../images/mt.svg) left center / 11px 16px no-repeat;
-            }
-
-            .platform-app__btns {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        &--dt {
-            .platform-app__title {
-                padding-left: 27px;
-                background: url(../images/dt.svg) left center / 17px 16px no-repeat;
-            }
-        }
-    }
-
-    h2 {
-        text-align: left;
-    }
-
-    p {
-        max-width: 650px;
-        color: var(--white);
-    }
-
-    &__btns {
-        max-width: 560px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-top: 35px;
-
-        .btn {
-            padding: 16px;
-        }
-    }
-
-    &__title {
-        margin-bottom: 10px;
-        font-size: 18px;
-        line-height: 130%;
-        font-weight: 400;
-        color: var(--grey-bg);
-    }
-
-    picture {
-        img {
-            max-width: 100%;
             display: block;
-            margin: 30px auto -5px;
+            width: calc(100% + 20px);
+            max-width: calc(100% + 20px);
+            margin: auto -10px -10px;
         }
     }
 }

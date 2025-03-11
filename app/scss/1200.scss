@@ -294,16 +294,6 @@
         }
     }
 
-    .platform-app {
-        .container {
-            padding: 100px 20px;
-        }
-
-        &__item {
-            padding: 15px;
-        }
-    }
-
     .platform-why {
         &__list {
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -532,6 +522,19 @@
 
         .btn {
             margin-top: 25px;
+        }
+    }
+
+    .platform-tr {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
         }
     }
 }
