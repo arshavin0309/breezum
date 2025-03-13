@@ -49,4 +49,14 @@
             grid-row: 5;
         }
     }
+
+    .news-page-content {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .news-page-banner {
+        display: none;
+    }
 }

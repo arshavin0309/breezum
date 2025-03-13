@@ -135,6 +135,11 @@ if (!document.title) {
             document.title = title;
             break;
 
+        case '/news-page.html':
+            title = $('h1').html();
+            document.title = title;
+            break;
+
         default:
             document.title = 'Нужно установить title';
             break;
@@ -217,6 +222,10 @@ document.querySelector('.cookies .btn').addEventListener('click', () => {
 })
 
 // окно с предупреждением о куки (конец)
+
+$(window).on('resize', function () {
+    window.location.reload()
+});
 
 // мобильное меню (начало)
 

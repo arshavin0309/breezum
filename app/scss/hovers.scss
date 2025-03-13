@@ -144,6 +144,16 @@
             }
         }
     }
+
+    .news-page-content {
+        &__text {
+            a {
+                &:hover {
+                    color: var(--hover);
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1201px) {
