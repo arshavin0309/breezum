@@ -350,11 +350,11 @@
     }
 
     .crumbs {
-        font-size: 17px;
+        font-size: clamp(14px, 5vw, 17px);
     }
 
     .title {
-        font-size: 14px;
+        font-size: clamp(12px, 3vw, 14px);
     }
 
     .platform-tr {

@@ -660,6 +660,10 @@ h3 {
         padding: 23px;
         border-radius: 20px;
         border: 1px solid var(--red);
+
+        .btn {
+            font-size: 15px;
+        }
     }
 
     &__heading {
@@ -1218,6 +1222,9 @@ h3 {
     }
 
     h2 {
+        max-width: 670px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: left;
     }
 
