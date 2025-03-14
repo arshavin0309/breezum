@@ -636,7 +636,7 @@ h3 {
     }
 
     &__item {
-        height: 265px;
+        min-height: 265px;
         padding: 23px;
         background: var(--grey-bg);
         border-radius: 20px;

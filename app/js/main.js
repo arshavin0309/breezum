@@ -223,10 +223,6 @@ document.querySelector('.cookies .btn').addEventListener('click', () => {
 
 // окно с предупреждением о куки (конец)
 
-$(window).on('resize', function () {
-    window.location.reload()
-});
-
 // мобильное меню (начало)
 
 let menuItem = $('.header .menu > .menu-item');
@@ -395,6 +391,8 @@ switch (document.location.pathname) {
     case '/documents/':
         $('.footer__title').html('Take your trading to the next level with TigerRiskCapital!');
         $('.footer__info').html('Open your account and unlock exclusive features');
+        $('.footer__title--de').html('Bringen Sie Ihren Handel mit Tigerrisktrade auf die nächste Stufe!');
+        $('.footer__info--de').html('Eröffnen Sie Ihr Konto und schalten Sie exklusive Funktionen frei');
         break;
 
     case '/platform.html':
@@ -407,18 +405,31 @@ switch (document.location.pathname) {
     case '/news/':
         $('.footer__title').html('Empower your trading');
         $('.footer__info').html('Join a community of traders who rely on TigerRiskCapital’s to achieve their goals');
+        $('.footer__title--de').html('Stärken Sie Ihren Handel');
+        $('.footer__info--de').html('Treten Sie einer Gemeinschaft von Händlern bei, die sich auf Tigerrisktrade\'s verlassen, um ihre Ziele zu erreichen');
         break;
 
     default:
         $('.footer__title').html('Your success, our commitment')
         $('.footer__info').html('Start your journey with TigerRiskCapital');
+        $('.footer__title--de').html('Ihr Erfolg, unser Engagement')
+        $('.footer__info--de').html('Beginnen Sie Ihre Reise mit Tigerrisktrade');
         break;
 }
 
 switch (lang) {
     case 'ru':
+    case 'ru_RU':
+    case 'ru-RU':
         $('.cookies__info').html('Мы используем файлы cookie, чтобы больше узнать о том, как вы пользуетесь нашим сайтом, и что мы можем улучшить.');
         $('.cookies .btn').html('Принять');
+        break;
+
+    case 'de':
+    case 'de_DE':
+    case 'de-DE':
+        $('.cookies__info').html('Wir verwenden Cookies, um mehr darüber zu erfahren, wie Sie unsere Website nutzen und was wir verbessern können.');
+        $('.cookies .btn').html('Akzeptieren');
         break;
 
     default:
