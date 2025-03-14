@@ -1,0 +1,71 @@
+<!--=include header.html -->
+
+<main>
+    <section class="overview-hero">
+        <div class="wide-container">
+            <div class="container">
+                <div class="crumbs">
+                    <div><a href="/">Main</a></div>
+                    <div>Analytics</div>
+                    <div>Market overview</div>
+                </div>
+                <h1>Stay ahead with real-time market insights</h1>
+                <p class="textm">Access TigerRiskCapital's comprehensive market overview tools to make better trading decisions based on live data and key events</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-condition">
+        <div class="container">
+            <div class="overview-condition__box">
+                <div class="title white-bg">Assess overall market conditions at a glance</div>
+                <h2>Gain a snapshot of current market trends. This tool provides an overview of the general market mood and volatility, helping you align your trades with the broader trend</h2>
+            </div>
+
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/markets/widget.js" data-config='{"language":"en","orientation":"vertical","defaultPeriod":"week","adaptive":true,"groups":[{"name":"Металлы","symbols":"99,127,57,68,87,14,225"}]}'></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-charts">
+        <div class="container">
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"en","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD"}'></script>
+            </div>
+
+            <div class="overview-charts__box">
+                <div class="title white-bg">Visualize trends with interactive charts</div>
+                <h2>Be informed of crucial economic releases and market-moving news. Plan your trades around significant events for optimal timing and risk management</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-quotes">
+        <div class="wide-container">
+            <div class="container">
+                <div class="title green-bg">Online quotes for precise decision-making</div>
+                <h2>Track up-to-the-second price changes across various asset classes. Monitor market movements instantly and respond with confidence</h2>
+
+                <div class="widget-box">
+                    <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"en","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Металлы","symbols":"97,98,99,100,104,127,128,129,277,10,6,35"}]}'></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-events">
+        <div class="container">
+            <div class="overview-events__box">
+                <div class="title white-bg">Stay alert for major market events</div>
+                <h2>Use the chart to gain visual insights into market movements and price dynamics. Track historical trends and current fluctuations, enabling you to make more informed trading decisions</h2>
+            </div>
+
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/notifier/widget.js" data-config='{"language":"en","period":"all","multipleIndicators":true,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19"}'></script>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--=include footer.html -->

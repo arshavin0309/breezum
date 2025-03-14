@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Берется из js -->
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wide-container">
+            <div class="container">
+                <a href="tiger-risk-capital" class="header__logo"></a>
+
+                <nav class="header__nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="##">Trading</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="terms.html">Trading terms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="platform.html">Trading platform</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="instruments.html">Trading Instruments</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="tips.html">Trading tips</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="##">Analytics</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="overview.html">Market overview</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="news.html">Market news</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forecasts.html">Market forecasts</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="calendar.html">Economic calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="##">About us</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="about.html">About TigerRiskCapital</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contacts.html">Contacts</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="documents.html">Documents</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="##">EN</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="##">EN</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="##">DE</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__box">
+                    <a href="##" class="header__btn">Sign In</a>
+                    <div class="header__burger"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="overview-hero">
+        <div class="wide-container">
+            <div class="container">
+                <div class="crumbs">
+                    <div><a href="tiger-risk-capital">Main</a></div>
+                    <div>Analytics</div>
+                    <div>Market overview</div>
+                </div>
+                <h1>Stay ahead with real-time market insights</h1>
+                <p class="textm">Access TigerRiskCapital’s comprehensive market overview tools to make better trading decisions based on live data and key events</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-condition">
+        <div class="container">
+            <div class="overview-condition__box">
+                <div class="title white-bg">Assess overall market conditions at a glance</div>
+                <h2>Gain a snapshot of current market trends. This tool provides an overview of the general market mood and volatility, helping you align your trades with the broader trend</h2>
+            </div>
+
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/markets/widget.js" data-config='{"language":"en","orientation":"vertical","defaultPeriod":"week","adaptive":true,"groups":[{"name":"Металлы","symbols":"99,127,57,68,87,14,225"}]}'></script>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-charts">
+        <div class="container">
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/chart/widget.js" data-config='{"timeframe":"H1","barStyle":"Candle","offset":30,"colorScheme":"light","language":"en","symbolsEnabled":true,"showTools":true,"terminalBtnVisible":false,"symbol":"EURUSD"}'></script>
+            </div>
+
+            <div class="overview-charts__box">
+                <div class="title white-bg">Visualize trends with interactive charts</div>
+                <h2>Be informed of crucial economic releases and market-moving news. Plan your trades around significant events for optimal timing and risk management</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-quotes">
+        <div class="wide-container">
+            <div class="container">
+                <div class="title green-bg">Online quotes for precise decision-making</div>
+                <h2>Track up-to-the-second price changes across various asset classes. Monitor market movements instantly and respond with confidence</h2>
+
+                <div class="widget-box">
+                    <script src="https://api.marketcheese.com/widgets/quotes/widget.js" data-config='{"language":"en","lastColumn":"todayIncrement","adaptive":true,"columns":"ask,bid,dayOpening,dayMax,dayMin,todayIncrement,todayIncrementAbs","groups":[{"name":"Металлы","symbols":"97,98,99,100,104,127,128,129,277,10,6,35"}]}'></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview-events">
+        <div class="container">
+            <div class="overview-events__box">
+                <div class="title white-bg">Stay alert for major market events</div>
+                <h2>Use the chart to gain visual insights into market movements and price dynamics. Track historical trends and current fluctuations, enabling you to make more informed trading decisions</h2>
+            </div>
+
+            <div class="widget-box">
+                <script src="https://api.marketcheese.com/widgets/notifier/widget.js" data-config='{"language":"en","period":"all","multipleIndicators":true,"adaptive":true,"currencies":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19"}'></script>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+
+    <div class="wide-container">
+
+        <div class="footer__banner">
+
+            <h2 class="footer__title"></h2>
+
+            <p class="textm footer__info"></p>
+
+            <a href="##" class="btn btn--white btn--center">Get started</a>
+
+        </div>
+
+        <div class="swiper swiper2">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+                <div class="swiper-slide"></div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__box">
+
+            <a href="tiger-risk-capital" class="footer__logo"></a>
+
+            <ul class="menu">
+
+                <li class="menu-item">
+
+                    <a href="##">Trading</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item">
+
+                            <a href="terms.html">Trading terms</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="platform.html">Trading platform</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="instruments.html">Trading Instruments</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="tips.html">Trading tips</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">Analytics</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item">
+
+                            <a href="overview.html">Market overview</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="news.html">Market news</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="forecasts.html">Market forecasts</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="calendar.html">Economic calendar</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="##">About us</a>
+
+                    <ul class="sub-menu">
+
+                        <li class="menu-item">
+
+                            <a href="about.html">About TigerRiskCapital</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="contacts.html">Contacts</a>
+
+                        </li>
+
+                        <li class="menu-item">
+
+                            <a href="documents.html">Documents</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <p class="texts">Risk Notification: Investing in high-risk groups: (Forex) and contracts for Difference (CFDs) is a speculative operation, including high risk, and is not suitable for every investor. You may suffer partial or full losses of your invested funds, so we do not recommend investing capital that you cannot risk. You should be aware of the increased risk associated with using leverage. We strongly recommend that you familiarize yourself with the terms and services of our website before using our service.</p>
+
+        </div>
+
+        <p class="texts footer__copyright">©TigerRiskCapital 2025. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+<div class="upButton"></div>
+
+<div class="cookies">
+
+    <p class="cookies__info"></p>
+
+    <button class="btn btn--white cookies--close"></button>
+
+</div>
+
+<script defer src="js/main.min.js"></script>
+
+</body>
+
+</html>
